@@ -1,4 +1,4 @@
 category: X11
 requires: cygwin libX11_6 libxkbfile1
-sdesc: "Xorg XKB keymap compiler"
-ldesc: "Xorg XKB keymap compiler"
+sdesc: "X.Org XKB keymap compiler"
+ldesc: "X.Org XKB keymap compiler"
