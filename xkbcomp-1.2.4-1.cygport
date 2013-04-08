@@ -1,3 +1,0 @@
-inherit xorg
-
-CYGCONF_ARGS="--with-xkb-config-root=/usr/share/X11/xkb"
