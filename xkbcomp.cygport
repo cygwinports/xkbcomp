@@ -1,10 +1,15 @@
 inherit xorg
 
 NAME="xkbcomp"
-VERSION=1.2.4
+VERSION=1.3.1
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="X.Org XKB keymap compiler"
 DESCRIPTION="X.Org XKB keymap compiler"
+
+PKG_NAMES="${NAME} ${NAME}-devel"
+xkbcomp_CONTENTS="usr/bin/xkbcomp.exe usr/share/doc/ usr/share/man/man1/"
+xkbcomp_devel_REQUIRES=${NAME}
+xkbcomp_devel_CONTENTS="usr/lib/pkgconfig/xkbcomp.pc"
 
 CYGCONF_ARGS="--with-xkb-config-root=/usr/share/X11/xkb"
